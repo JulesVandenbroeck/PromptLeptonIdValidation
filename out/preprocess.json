@@ -1,0 +1,515 @@
+{
+  "output_names": [
+    "label_prompt_mclass",
+    "label_tau_mclass",
+    "label_heavy_mclass",
+    "label_light_mclass",
+    "label_fake_mclass"
+  ],
+  "input_names": [
+    "pf_features",
+    "pf_points",
+    "pf_vectors",
+    "pf_mask",
+    "sv_features",
+    "sv_points",
+    "sv_vectors",
+    "sv_mask",
+    "high_level"
+  ],
+  "pf_features": {
+    "var_names": [
+      "PF_pt_log",
+      "PF_charge",
+      "PF_isElectron",
+      "PF_isMuon",
+      "PF_isNeutralHadron",
+      "PF_isPhoton",
+      "PF_isChargedHadron",
+      "PF_fromPV",
+      "PF_puppiWeightNoLep",
+      "PF_hcalFraction",
+      "PF_dzSig_log",
+      "PF_dxySig_log"
+    ],
+    "var_infos": {
+      "PF_pt_log": {
+        "median": -1.072,
+        "norm_factor": 1.135,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_charge": {
+        "median": -0.008,
+        "norm_factor": 0.892,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_isElectron": {
+        "median": -0.008,
+        "norm_factor": 0.088,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_isMuon": {
+        "median": -0.162,
+        "norm_factor": 0.369,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_isNeutralHadron": {
+        "median": -0.081,
+        "norm_factor": 0.273,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_isPhoton": {
+        "median": -0.123,
+        "norm_factor": 0.329,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_isChargedHadron": {
+        "median": -0.625,
+        "norm_factor": 0.484,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_fromPV": {
+        "median": -1.699,
+        "norm_factor": 1.288,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_puppiWeightNoLep": {
+        "median": -0.513,
+        "norm_factor": 0.481,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_hcalFraction": {
+        "median": -0.578,
+        "norm_factor": 0.463,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_dzSig_log": {
+        "median": -0.008,
+        "norm_factor": 4.426,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_dxySig_log": {
+        "median": 0.007,
+        "norm_factor": 1.495,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      }
+    },
+    "var_length": 60
+  },
+  "pf_points": {
+    "var_names": [
+      "PF_eta_rel",
+      "PF_phi_rel"
+    ],
+    "var_infos": {
+      "PF_eta_rel": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "PF_phi_rel": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      }
+    },
+    "var_length": 60
+  },
+  "pf_vectors": {
+    "var_names": [
+      "PF_px",
+      "PF_py",
+      "PF_pz",
+      "PF_energy"
+    ],
+    "var_infos": {
+      "PF_px": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "PF_py": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "PF_pz": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "PF_energy": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      }
+    },
+    "var_length": 60
+  },
+  "pf_mask": {
+    "var_names": [
+      "PF_mask"
+    ],
+    "var_infos": {
+      "PF_mask": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      }
+    },
+    "var_length": 60
+  },
+  "sv_features": {
+    "var_names": [
+      "SV_pt_log",
+      "SV_mass_log",
+      "SV_dlenSig_log",
+      "SV_dxy_log",
+      "SV_ndof",
+      "SV_chi2",
+      "SV_cospAngle",
+      "SV_nTracks"
+    ],
+    "var_infos": {
+      "SV_pt_log": {
+        "median": -2.765,
+        "norm_factor": 0.903,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_mass_log": {
+        "median": -0.356,
+        "norm_factor": 0.679,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_dlenSig_log": {
+        "median": -2.073,
+        "norm_factor": 1.183,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_dxy_log": {
+        "median": 1.809,
+        "norm_factor": 1.241,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_ndof": {
+        "median": -2.26,
+        "norm_factor": 1.804,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_chi2": {
+        "median": -2.427,
+        "norm_factor": 2.562,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_cospAngle": {
+        "median": 0.98,
+        "norm_factor": 0.18,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_nTracks": {
+        "median": -2.743,
+        "norm_factor": 0.957,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      }
+    },
+    "var_length": 5
+  },
+  "sv_points": {
+    "var_names": [
+      "SV_eta_rel",
+      "SV_phi_rel"
+    ],
+    "var_infos": {
+      "SV_eta_rel": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "SV_phi_rel": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      }
+    },
+    "var_length": 5
+  },
+  "sv_vectors": {
+    "var_names": [
+      "SV_px",
+      "SV_py",
+      "SV_pz",
+      "SV_energy"
+    ],
+    "var_infos": {
+      "SV_px": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "SV_py": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "SV_pz": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      },
+      "SV_energy": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -1e+32,
+        "upper_bound": 1e+32,
+        "pad": 0
+      }
+    },
+    "var_length": 5
+  },
+  "sv_mask": {
+    "var_names": [
+      "SV_mask"
+    ],
+    "var_infos": {
+      "SV_mask": {
+        "median": 0,
+        "norm_factor": 1,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      }
+    },
+    "var_length": 5
+  },
+  "high_level": {
+    "var_names": [
+      "Lepton_pt_log",
+      "Lepton_eta",
+      "Lepton_dxy",
+      "Lepton_dz",
+      "Lepton_sip3d",
+      "Lepton_segmentComp",
+      "Lepton_jetPNet",
+      "Lepton_jetPtRatio",
+      "Lepton_jetNDauChargedMVASel",
+      "Lepton_miniRelIsoNeutral_log",
+      "Lepton_jetPtRelv2_log",
+      "Lepton_miniRelIsoCharged_log",
+      "Lepton_pfRelIso03_all_log",
+      "Lepton_mvaId"
+    ],
+    "var_infos": {
+      "Lepton_pt_log": {
+        "median": -3.205,
+        "norm_factor": 0.899,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_eta": {
+        "median": 0.002,
+        "norm_factor": 1.189,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_dxy": {
+        "median": 6.887,
+        "norm_factor": 1.538,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_dz": {
+        "median": 6.075,
+        "norm_factor": 1.552,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_sip3d": {
+        "median": -2.325,
+        "norm_factor": 2.128,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_segmentComp": {
+        "median": -0.871,
+        "norm_factor": 0.178,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_jetPNet": {
+        "median": -0.432,
+        "norm_factor": 0.38,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_jetPtRatio": {
+        "median": -0.689,
+        "norm_factor": 0.25,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_jetNDauChargedMVASel": {
+        "median": -2.107,
+        "norm_factor": 1.623,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_miniRelIsoNeutral_log": {
+        "median": 12.799,
+        "norm_factor": 7.465,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_jetPtRelv2_log": {
+        "median": -0.812,
+        "norm_factor": 3.176,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_miniRelIsoCharged_log": {
+        "median": 11.973,
+        "norm_factor": 7.865,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_pfRelIso03_all_log": {
+        "median": 6.177,
+        "norm_factor": 7.231,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      },
+      "Lepton_mvaId": {
+        "median": -0.641,
+        "norm_factor": 0.169,
+        "replace_inf_value": 0,
+        "lower_bound": -5,
+        "upper_bound": 5,
+        "pad": 0
+      }
+    },
+    "var_length": 1
+  }
+}
