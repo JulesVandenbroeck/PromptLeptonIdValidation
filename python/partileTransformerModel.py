@@ -43,7 +43,8 @@ class CustomParticleTransformer(nn.Module):
             nn.Dropout(0.2),
             nn.Linear(256, 128),
             nn.GELU(),
-            nn.Linear(128, num_classes)
+            nn.Linear(128, num_classes),
+            nn.Softmax(dim=1),
         )
 
     def forward(self, pf_features, pf_points, pf_vectors, pf_mask,
@@ -70,9 +71,11 @@ class CustomParticleTransformer(nn.Module):
 
 
 def get_model(data_config, **kwargs):
-    
-    pf_total_dim = len(data_config.input_dicts['pf_features']+data_config.input_dicts['pf_points'])
-    sv_total_dim = len(data_config.input_dicts['sv_features']+data_config.input_dicts['sv_points'])
+
+    pf_total_dim = len(
+        data_config.input_dicts['pf_features']+data_config.input_dicts['pf_points'])
+    sv_total_dim = len(
+        data_config.input_dicts['sv_features']+data_config.input_dicts['sv_points'])
     num_classes = len(data_config.label_value)
     hlf_dim = len(data_config.input_dicts['high_level'])
 
@@ -97,7 +100,7 @@ def get_model(data_config, **kwargs):
     )
 
     # dont' use this!!! - why? no idea...
-    ### cfg.update(**kwargs)
+    # cfg.update(**kwargs)
     _logger.info('Model config: %s' % str(cfg))
 
     model = CustomParticleTransformer(**cfg)
@@ -110,4 +113,3 @@ def get_model(data_config, **kwargs):
     }
 
     return model, model_info
-
