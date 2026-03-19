@@ -1,0 +1,194 @@
+{
+    "Lepton_pt_log": {
+        "mean": 3.74,
+        "std": 0.652
+    },
+    "Lepton_eta": {
+        "mean": 0.06,
+        "std": 1.158
+    },
+    "Lepton_dxy": {
+        "mean": -7.257,
+        "std": 1.75
+    },
+    "Lepton_dz": {
+        "mean": -6.232,
+        "std": 2.06
+    },
+    "Lepton_sip3d": {
+        "mean": 31.561,
+        "std": 374.339
+    },
+    "Lepton_segmentComp": {
+        "mean": 0.88,
+        "std": 0.187
+    },
+    "Lepton_jetPNet": {
+        "mean": 0.084,
+        "std": 0.245
+    },
+    "Lepton_jetPtRatio": {
+        "mean": 0.824,
+        "std": 0.192
+    },
+    "Lepton_jetNDauChargedMVASel": {
+        "mean": 1.606,
+        "std": 1.621
+    },
+    "Lepton_miniRelIsoNeutral_log": {
+        "mean": -13.539,
+        "std": 6.983
+    },
+    "Lepton_jetPtRelv2_log": {
+        "mean": 1.278,
+        "std": 3.186
+    },
+    "Lepton_miniRelIsoCharged_log": {
+        "mean": -14.087,
+        "std": 6.967
+    },
+    "Lepton_pfRelIso03_all_log": {
+        "mean": -8.008,
+        "std": 7.275
+    },
+    "Lepton_mvaId": {
+        "mean": 0.669,
+        "std": 0.187
+    },
+    "PF_pt_log": {
+        "mean": 1.144,
+        "std": 1.3
+    },
+    "PF_charge": {
+        "mean": -0.044,
+        "std": 0.894
+    },
+    "PF_isElectron": {
+        "mean": 0.004,
+        "std": 0.067
+    },
+    "PF_isMuon": {
+        "mean": 0.162,
+        "std": 0.368
+    },
+    "PF_isNeutralHadron": {
+        "mean": 0.067,
+        "std": 0.25
+    },
+    "PF_isPhoton": {
+        "mean": 0.133,
+        "std": 0.339
+    },
+    "PF_isChargedHadron": {
+        "mean": 0.635,
+        "std": 0.482
+    },
+    "PF_fromPV": {
+        "mean": 1.522,
+        "std": 1.361
+    },
+    "PF_puppiWeightNoLep": {
+        "mean": 0.429,
+        "std": 0.487
+    },
+    "PF_hcalFraction": {
+        "mean": 0.526,
+        "std": 0.462
+    },
+    "PF_dzSig_log": {
+        "mean": 0.19,
+        "std": 4.684
+    },
+    "PF_dxySig_log": {
+        "mean": -0.055,
+        "std": 1.357
+    },
+    "PF_trackerLayersWithMeasurement": {
+        "mean": 8.888,
+        "std": 5.274
+    },
+    "PF_numberOfPixelHits": {
+        "mean": 2.961,
+        "std": 1.93
+    },
+    "PF_eta_rel": {
+        "mean": -0.006,
+        "std": 0.174
+    },
+    "PF_phi_rel": {
+        "mean": -0.006,
+        "std": 0.175
+    },
+    "PF_px": {
+        "mean": 0.224,
+        "std": 0.363
+    },
+    "PF_py": {
+        "mean": -0.0,
+        "std": 0.026
+    },
+    "PF_pz": {
+        "mean": -0.0,
+        "std": 0.02
+    },
+    "PF_energy": {
+        "mean": 0.226,
+        "std": 0.363
+    },
+    "SV_pt_log": {
+        "mean": 3.226,
+        "std": 1.024
+    },
+    "SV_mass_log": {
+        "mean": 0.408,
+        "std": 0.674
+    },
+    "SV_dlenSig_log": {
+        "mean": 2.721,
+        "std": 1.248
+    },
+    "SV_dxy_log": {
+        "mean": -0.856,
+        "std": 1.482
+    },
+    "SV_ndof": {
+        "mean": 2.287,
+        "std": 2.062
+    },
+    "SV_chi2": {
+        "mean": 3.066,
+        "std": 3.289
+    },
+    "SV_cospAngle": {
+        "mean": -0.997,
+        "std": 0.009
+    },
+    "SV_nTracks": {
+        "mean": 2.774,
+        "std": 1.099
+    },
+    "SV_eta_rel": {
+        "mean": -0.005,
+        "std": 0.06
+    },
+    "SV_phi_rel": {
+        "mean": -0.032,
+        "std": 0.105
+    },
+    "SV_px": {
+        "mean": 1.044,
+        "std": 0.779
+    },
+    "SV_py": {
+        "mean": -0.035,
+        "std": 0.103
+    },
+    "SV_pz": {
+        "mean": -0.01,
+        "std": 0.059
+    },
+    "SV_energy": {
+        "mean": 1.05,
+        "std": 0.782
+    }
+}
